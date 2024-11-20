@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Curtidas</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: steelblue;
+            color: #ffffff;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius:5px;
+            border: solid black 3px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(15, 72, 118);
+            color: #ffffff;
+        }
+
+        input::placeholder {
+            color: #ffffff;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color:limegreen;
+            border-radius:5px;
+            border: solid black 3px;
+            color:white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Contador de Curtidas</h1>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <button id="curtida">Curtir</button>
+        <p id="info">Ninguém curtiu</p>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
